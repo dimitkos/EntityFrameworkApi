@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkApi", "EntityFrameworkApi\EntityFrameworkApi.csproj", "{CDAEF446-C602-4B33-96A4-AC3DDEC8E340}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{1432D514-C352-44E0-A993-CBD1214EFBE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Implementation", "Api.Implementation\Api.Implementation.csproj", "{A68A9848-D09C-41BD-952F-2F5597D4E616}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{CDAEF446-C602-4B33-96A4-AC3DDEC8E340}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDAEF446-C602-4B33-96A4-AC3DDEC8E340}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDAEF446-C602-4B33-96A4-AC3DDEC8E340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68A9848-D09C-41BD-952F-2F5597D4E616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68A9848-D09C-41BD-952F-2F5597D4E616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68A9848-D09C-41BD-952F-2F5597D4E616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68A9848-D09C-41BD-952F-2F5597D4E616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A68A9848-D09C-41BD-952F-2F5597D4E616} = {1432D514-C352-44E0-A993-CBD1214EFBE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B02C7E0A-F942-4C15-A7BE-A821A135A6FB}
