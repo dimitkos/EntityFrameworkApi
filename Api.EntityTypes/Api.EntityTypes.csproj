@@ -52,6 +52,9 @@
     <Compile Include="Course.cs">
       <DependentUpon>School.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\AddressModel.cs" />
+    <Compile Include="Model\StandardModel.cs" />
+    <Compile Include="Model\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="School.Context.cs">
       <AutoGen>True</AutoGen>
