@@ -17,6 +17,8 @@ namespace Api.Controllers
             this.service = service;
         }
 
+        [HttpGet]
+        [ActionName("getAllStudents")]
         public IHttpActionResult GetAllStudents()
         {
             var result = service.GetAllStudents();
