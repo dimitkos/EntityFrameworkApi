@@ -43,5 +43,11 @@
     <Compile Include="IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Api.EntityTypes\Api.EntityTypes.csproj">
+      <Project>{6A01345F-212A-40BF-A1A3-825B74F55EA8}</Project>
+      <Name>Api.EntityTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
