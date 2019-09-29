@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.EntityTypes", "Api.Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Controllers", "Api.Controllers\Api.Controllers.csproj", "{114FDA90-C021-4194-9765-5B21983D191B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Interfaces", "Api.Interfaces\Api.Interfaces.csproj", "{06D2D50A-C19F-4797-85E3-730D19C9BD1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{114FDA90-C021-4194-9765-5B21983D191B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114FDA90-C021-4194-9765-5B21983D191B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{114FDA90-C021-4194-9765-5B21983D191B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D2D50A-C19F-4797-85E3-730D19C9BD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D2D50A-C19F-4797-85E3-730D19C9BD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D2D50A-C19F-4797-85E3-730D19C9BD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D2D50A-C19F-4797-85E3-730D19C9BD1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{A68A9848-D09C-41BD-952F-2F5597D4E616} = {1432D514-C352-44E0-A993-CBD1214EFBE9}
 		{6A01345F-212A-40BF-A1A3-825B74F55EA8} = {1432D514-C352-44E0-A993-CBD1214EFBE9}
 		{114FDA90-C021-4194-9765-5B21983D191B} = {1432D514-C352-44E0-A993-CBD1214EFBE9}
+		{06D2D50A-C19F-4797-85E3-730D19C9BD1F} = {1432D514-C352-44E0-A993-CBD1214EFBE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B02C7E0A-F942-4C15-A7BE-A821A135A6FB}
