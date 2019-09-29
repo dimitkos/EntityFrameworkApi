@@ -11,5 +11,7 @@ namespace Api.Interfaces
     public interface IService
     {
         GetAllStudentResponse GetAllStudents();
+
+        GetAddressesOfStudentsResponse GetAddressesOfStudents();
     }
 }

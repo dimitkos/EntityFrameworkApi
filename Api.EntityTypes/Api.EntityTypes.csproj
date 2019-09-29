@@ -54,8 +54,10 @@
     </Compile>
     <Compile Include="Model\AddressModel.cs" />
     <Compile Include="Model\StandardModel.cs" />
+    <Compile Include="Model\StudentAddresses.cs" />
     <Compile Include="Model\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response\GetAddressesOfStudentsResponse.cs" />
     <Compile Include="Response\GetAllStudentResponse.cs" />
     <Compile Include="School.Context.cs">
       <AutoGen>True</AutoGen>

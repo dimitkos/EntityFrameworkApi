@@ -29,5 +29,18 @@ namespace Api.Controllers
             }
             return Ok(result);
         }
+
+        [HttpGet]
+        [ActionName("getStudentAddresses")]
+        public IHttpActionResult GetStudentAddresses()
+        {
+            var result = service.GetAddressesOfStudents();
+
+            if (result.StudentAddresses.Count == 0 || result.StudentAddresses == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
     }
 }

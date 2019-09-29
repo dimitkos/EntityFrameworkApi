@@ -17,7 +17,7 @@ namespace Api.Implementation
 
             using (var ctx = new SchoolDbEntities())
             {
-                students = ctx.Students.Include("StudentAddress")
+                students = ctx.Students
                             .Select(s => new StudentModel()
                             {
                                 Id = s.StudentId,
@@ -29,6 +29,32 @@ namespace Api.Implementation
             return new GetAllStudentResponse
             {
                 Students = students
+            };
+        }
+
+        public GetAddressesOfStudentsResponse GetAddressesOfStudents()
+        {
+            List<StudentAddresses> addresses = null;
+            using (var ctx = new SchoolDbEntities())
+            {
+                addresses = ctx.Students.Include("StudentAddress").Select(x => new StudentAddresses()
+                {
+                    Id = x.StudentId,
+                    FirstName = x.FirstName,
+                    LastName = x.LastName,
+                    Address = x.StudentAddress == null ? null : new AddressModel()
+                    {
+                        StudentId = x.StudentId,
+                        Address1 = x.StudentAddress.Address1,
+                        Address2 = x.StudentAddress.Address2,
+                        City = x.StudentAddress.City,
+                        State = x.StudentAddress.State
+                    }
+                }).ToList<StudentAddresses>();
+            }
+            return new GetAddressesOfStudentsResponse
+            {
+                StudentAddresses = addresses
             };
         }
     }
