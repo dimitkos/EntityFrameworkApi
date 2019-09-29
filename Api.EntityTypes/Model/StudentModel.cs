@@ -12,7 +12,7 @@ namespace Api.EntityTypes.Model
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public AddressModel Address { get; set; }
-        public StandardModel Standard { get; set; }
+        //public AddressModel Address { get; set; }
+        //public StandardModel Standard { get; set; }
     }
 }

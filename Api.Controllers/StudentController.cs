@@ -23,7 +23,7 @@ namespace Api.Controllers
         {
             var result = service.GetAllStudents();
 
-            if (result.Count == 0 || result== null)
+            if (result.Students.Count == 0 || result.Students== null)
             {
                 return NotFound();
             }

@@ -11,7 +11,7 @@ namespace Api.Implementation
 {
     public class DbImplementation : IService
     {
-        public List<StudentModel> GetAllStudents()
+        public GetAllStudentResponse GetAllStudents()
         {
             List<StudentModel> students = null;
 
@@ -26,7 +26,10 @@ namespace Api.Implementation
                             }).ToList<StudentModel>();
             }
 
-            return students;
+            return new GetAllStudentResponse
+            {
+                Students = students
+            };
         }
     }
 }

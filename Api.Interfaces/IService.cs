@@ -1,4 +1,5 @@
-﻿using Api.EntityTypes.Model;
+﻿using Api.EntityTypes;
+using Api.EntityTypes.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Api.Interfaces
 {
     public interface IService
     {
-        List<StudentModel> GetAllStudents();
+        GetAllStudentResponse GetAllStudents();
     }
 }
