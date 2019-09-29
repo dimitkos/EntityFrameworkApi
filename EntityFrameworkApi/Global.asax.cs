@@ -1,4 +1,6 @@
-﻿using SimpleInjector;
+﻿using Api.Implementation;
+using Api.Interfaces;
+using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
 using SimpleInjector.Lifestyles;
 using System;
@@ -14,16 +16,17 @@ namespace EntityFrameworkApi
     {
         protected void Application_Start()
         {
-            //var container = new Container();
+            var container = new Container();
 
-            //container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
-            //container.Register<IApiService, ApiImplementation>(Lifestyle.Scoped);
-            //container.Register<IDbService, DbImplementation>(Lifestyle.Scoped);
-            //container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
+            container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
 
-            //container.Verify();
 
-            //GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
+            container.Register<IService, DbImplementation>(Lifestyle.Scoped);
+            container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
+
+            container.Verify();
+
+            GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }

@@ -106,7 +106,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Api.Implementation\Api.Implementation.csproj">
+      <Project>{A68A9848-D09C-41BD-952F-2F5597D4E616}</Project>
+      <Name>Api.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Api.Interfaces\Api.Interfaces.csproj">
+      <Project>{06D2D50A-C19F-4797-85E3-730D19C9BD1F}</Project>
+      <Name>Api.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

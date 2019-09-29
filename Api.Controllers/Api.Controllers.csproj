@@ -56,5 +56,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Api.EntityTypes\Api.EntityTypes.csproj">
+      <Project>{6A01345F-212A-40BF-A1A3-825B74F55EA8}</Project>
+      <Name>Api.EntityTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Api.Interfaces\Api.Interfaces.csproj">
+      <Project>{06D2D50A-C19F-4797-85E3-730D19C9BD1F}</Project>
+      <Name>Api.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
